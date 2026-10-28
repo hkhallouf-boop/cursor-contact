@@ -1,0 +1,16 @@
+{
+  "name": "cursor-contact",
+  "description": "Claude Code skills for working with Cursor's agent: delegate coding tasks and debate designs with other models.",
+  "owner": {
+    "name": "hkhallouf-boop",
+    "url": "https://github.com/hkhallouf-boop"
+  },
+  "plugins": [
+    {
+      "name": "cursor-contact",
+      "source": "./",
+      "description": "Delegate coding tasks to Cursor's agent and debate designs with other models through the Cursor CLI.",
+      "version": "0.1.0"
+    }
+  ]
+}

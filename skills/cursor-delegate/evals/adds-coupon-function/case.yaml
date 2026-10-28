@@ -1,0 +1,10 @@
+schema_version: "1.1"
+name: adds-coupon-function
+expected_outcome: |
+  Claude preflights cursor-agent, writes a self-contained brief and delegates the task to
+  Cursor with the default model (grok) at high effort. Cursor adds apply_coupon to
+  shop_utils/pricing.py, clamping percent to 0-100 and rounding through to_money, plus tests.
+  Claude then reviews the real diff, runs the test suite itself, and reports the model used,
+  the files changed, the review result and the test outcome. Nothing is committed.
+context:
+  scaffold_script: place-files.sh

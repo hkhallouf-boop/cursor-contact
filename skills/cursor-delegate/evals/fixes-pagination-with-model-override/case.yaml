@@ -1,0 +1,9 @@
+schema_version: "1.1"
+name: fixes-pagination-with-model-override
+expected_outcome: |
+  Claude honours the overrides: it dispatches to a Composer model at medium effort (or reports
+  clearly if effort was dropped). Cursor fixes paginate so page N returns
+  items[(N-1)*size : N*size] and adds a regression test for page 2+. Claude verifies the fix
+  with the tests, reports the model actually used and the files changed, and does not commit.
+context:
+  scaffold_script: place-files.sh

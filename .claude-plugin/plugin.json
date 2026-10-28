@@ -1,0 +1,22 @@
+{
+  "name": "cursor-contact",
+  "version": "0.1.0",
+  "description": "Let Claude Code hand coding tasks to Cursor's agent and debate designs with other models (Grok, GPT, Gemini, Opus...) through the Cursor CLI, then review the result before anything lands.",
+  "author": {
+    "name": "hkhallouf-boop",
+    "url": "https://github.com/hkhallouf-boop"
+  },
+  "homepage": "https://github.com/hkhallouf-boop/cursor-contact",
+  "repository": "https://github.com/hkhallouf-boop/cursor-contact",
+  "license": "MIT",
+  "keywords": [
+    "cursor",
+    "cursor-agent",
+    "grok",
+    "delegation",
+    "debate",
+    "second-opinion",
+    "code-review",
+    "multi-model"
+  ]
+}

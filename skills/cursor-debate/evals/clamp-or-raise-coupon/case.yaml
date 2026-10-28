@@ -1,0 +1,10 @@
+schema_version: "1.1"
+name: clamp-or-raise-coupon
+expected_outcome: |
+  Claude reads apply_coupon and its caller in checkout.py and writes down its own position before
+  contacting Cursor. It then runs a read-only debate with grok at high effort in a single Cursor
+  chat (at most 3 rounds), checking Cursor's code citations against the repository. It ends with
+  a verdict listing agreed points, concessions on each side, still-contested points with what
+  would settle them, and a recommendation. No repository files are modified.
+context:
+  scaffold_script: place-files.sh
